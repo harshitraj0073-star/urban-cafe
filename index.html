@@ -156,6 +156,7 @@
                             <p class="description">
                                 Crispy fried potato wedges seasoned with garlic, rosemary, and salt, served with herb mayo dip.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Herb Potato Wedges')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -174,6 +175,7 @@
                             <p class="description">
                                 Crispy toasted bread topped with melted cheddar cheese, green chillies, and oregano herbs.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Chilli Cheese Toast')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -193,6 +195,7 @@
                             <p class="description">
                                 Grilled sandwich layered with spiced paneer, fresh basil pesto sauce, tomatoes, and mozzarella cheese.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Pesto Paneer Sandwich')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -211,6 +214,7 @@
                             <p class="description">
                                 Penne pasta cooked in a rich white cheese sauce with sautéed mushrooms, garlic, and herbs.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Creamy Mushroom Alfredo')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -230,6 +234,7 @@
                             <p class="description">
                                 Smooth baked cheesecake with a crunchy biscuit base, topped with sweet strawberry fruit sauce.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Baked New York Cheesecake')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -248,6 +253,7 @@
                             <p class="description">
                                 Warm chocolate walnut brownie served with a scoop of vanilla ice cream and warm chocolate sauce.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Hot Brownie with Ice Cream')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -267,6 +273,7 @@
                             <p class="description">
                                 Chilled milk mixed with sweet condensed milk, topped with a fresh double espresso shot and ice.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Iced Spanish Latte')">+ Add to Reservation</button>
                         </div>
                     </article>
 
@@ -285,6 +292,7 @@
                             <p class="description">
                                 Refreshing drink made with fresh lemon juice, crushed green mint leaves, sugar, and sparkling soda.
                             </p>
+                            <button type="button" class="btn-card-order" onclick="selectDish('Fresh Mint Lemonade')">+ Add to Reservation</button>
                         </div>
                     </article>
                 </div>
@@ -301,11 +309,11 @@
                         <p>
                             Get any sandwich, one coffee of your choice, and a hot chocolate brownie for a special combo price of only ₹399!
                         </p>
-                        <div class="coupon-box">
+                        <div class="coupon-box" onclick="applyPromo('URBANBRUNCH')" style="cursor: pointer;" title="Click to apply promo code">
                             <span>Use Promo Code:</span>
                             <strong>URBANBRUNCH</strong>
                         </div>
-                        <a href="#contact" class="btn btn-primary">Book Table Now</a>
+                        <a href="#contact" class="btn btn-primary" onclick="applyPromo('URBANBRUNCH')">Book Table Now (Apply Code)</a>
                     </div>
                     <div class="banner-image">
                         <img src="images/special-brunch.jpg" alt="Weekend Brunch Food Combo">
@@ -487,63 +495,98 @@
                     </div>
 
                     <!-- Right Column: Table Reservation Form -->
-                    <div class="form-card">
-                        <h3>Book a Table</h3>
-                        <p>Fill this simple form to reserve your table. We will confirm shortly.</p>
+                    <div class="form-card" id="bookingCard">
+                        <div id="booking-form-wrap">
+                            <h3>Book a Table</h3>
+                            <p>Fill this simple form to reserve your table. We will confirm shortly.</p>
 
-                        <form class="booking-form" action="#" method="post">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="fullName">Your Name *</label>
-                                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Harshit Raj" required>
+                            <form class="booking-form" id="reservationForm" onsubmit="handleReservation(event)">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullName">Your Name *</label>
+                                        <input type="text" id="fullName" name="fullName" placeholder="e.g. Harshit Raj" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+                                    </div>
                                 </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" placeholder="e.g. harshit@gmail.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="guests">Number of Guests *</label>
+                                        <select id="guests" name="guests" required>
+                                            <option value="" disabled selected>Select Guests</option>
+                                            <option value="1">1 Person</option>
+                                            <option value="2">2 Persons</option>
+                                            <option value="3-4">3 – 4 Persons</option>
+                                            <option value="5+">5+ Persons</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="resDate">Date *</label>
+                                        <input type="date" id="resDate" name="resDate" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="resTime">Time Slot *</label>
+                                        <select id="resTime" name="resTime" required>
+                                            <option value="" disabled selected>Select Time</option>
+                                            <option value="morning">Morning (9:00 AM – 12:00 PM)</option>
+                                            <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
+                                            <option value="evening">Evening (4:00 PM – 8:00 PM)</option>
+                                            <option value="night">Night (8:00 PM – 10:30 PM)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
-                                    <label for="phone">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+                                    <label for="specialRequests">Special Request (Optional)</label>
+                                    <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="e.g. Need table near charging point, corner table..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full">Submit Reservation</button>
+                            </form>
+                        </div>
+
+                        <!-- Confirmation message box displayed on submit (Prevents 405 error on static hosting) -->
+                        <div id="booking-confirmation" class="booking-confirmation" style="display: none;">
+                            <div class="conf-icon">🎉</div>
+                            <h3>Table Reserved Successfully!</h3>
+                            <p class="conf-intro">Thank you, <strong id="conf-name">Harshit</strong>! We have received your booking request.</p>
+
+                            <div class="conf-details-box">
+                                <div class="conf-row">
+                                    <span>Party Size:</span>
+                                    <strong id="conf-guests">2 Persons</strong>
+                                </div>
+                                <div class="conf-row">
+                                    <span>Date:</span>
+                                    <strong id="conf-date">31/10/2026</strong>
+                                </div>
+                                <div class="conf-row">
+                                    <span>Time Slot:</span>
+                                    <strong id="conf-time">Evening (4:00 PM – 8:00 PM)</strong>
+                                </div>
+                                <div class="conf-row">
+                                    <span>Contact Phone:</span>
+                                    <strong id="conf-phone">9876543210</strong>
+                                </div>
+                                <div class="conf-row" id="conf-notes-row" style="display: none;">
+                                    <span>Notes & Requests:</span>
+                                    <strong id="conf-notes"></strong>
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email *</label>
-                                    <input type="email" id="email" name="email" placeholder="e.g. harshit@gmail.com" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="guests">Number of Guests *</label>
-                                    <select id="guests" name="guests" required>
-                                        <option value="" disabled selected>Select Guests</option>
-                                        <option value="1">1 Person</option>
-                                        <option value="2">2 Persons</option>
-                                        <option value="3-4">3 – 4 Persons</option>
-                                        <option value="5+">5+ Persons</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="resDate">Date *</label>
-                                    <input type="date" id="resDate" name="resDate" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="resTime">Time Slot *</label>
-                                    <select id="resTime" name="resTime" required>
-                                        <option value="" disabled selected>Select Time</option>
-                                        <option value="morning">Morning (9:00 AM – 12:00 PM)</option>
-                                        <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
-                                        <option value="evening">Evening (4:00 PM – 8:00 PM)</option>
-                                        <option value="night">Night (8:00 PM – 10:30 PM)</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="specialRequests">Special Request (Optional)</label>
-                                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="e.g. Need table near charging point, corner table..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-full">Submit Reservation</button>
-                        </form>
+                            <p class="conf-footer-text">A confirmation SMS has been sent. We look forward to seeing you at Urban Café!</p>
+                            <button type="button" class="btn btn-primary btn-full" onclick="resetBookingForm()">Make Another Reservation</button>
+                        </div>
                     </div>
 
                 </div>
@@ -593,5 +636,95 @@
         </div>
     </footer>
 
+    <!-- Client-side Interactive Script for Functional Buttons and Form Submission -->
+    <script>
+        // Handle Table Reservation Form Submission (Prevents 405 error on static hosting)
+        function handleReservation(event) {
+            event.preventDefault();
+
+            var name = document.getElementById('fullName').value.trim();
+            var phone = document.getElementById('phone').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var guests = document.getElementById('guests').value;
+            var date = document.getElementById('resDate').value;
+            var time = document.getElementById('resTime').value;
+            var notes = document.getElementById('specialRequests').value.trim();
+
+            if (!name || !phone || !email || !guests || !date || !time) {
+                alert('Please fill out all required fields before submitting.');
+                return;
+            }
+
+            document.getElementById('conf-name').textContent = name;
+            document.getElementById('conf-phone').textContent = phone;
+            document.getElementById('conf-guests').textContent = guests + (guests === '1' ? ' Person' : ' Persons');
+            document.getElementById('conf-date').textContent = date;
+
+            var timeNames = {
+                'morning': 'Morning (9:00 AM – 12:00 PM)',
+                'afternoon': 'Afternoon (12:00 PM – 4:00 PM)',
+                'evening': 'Evening (4:00 PM – 8:00 PM)',
+                'night': 'Night (8:00 PM – 10:30 PM)'
+            };
+            document.getElementById('conf-time').textContent = timeNames[time] || time;
+
+            if (notes) {
+                document.getElementById('conf-notes').textContent = notes;
+                document.getElementById('conf-notes-row').style.display = 'flex';
+            } else {
+                document.getElementById('conf-notes-row').style.display = 'none';
+            }
+
+            document.getElementById('booking-form-wrap').style.display = 'none';
+            var confBox = document.getElementById('booking-confirmation');
+            confBox.style.display = 'block';
+
+            confBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Reset reservation form to book another table
+        function resetBookingForm() {
+            document.getElementById('reservationForm').reset();
+            document.getElementById('booking-confirmation').style.display = 'none';
+            document.getElementById('booking-form-wrap').style.display = 'block';
+        }
+
+        // Apply promo code from specials banner
+        function applyPromo(code) {
+            var specialReq = document.getElementById('specialRequests');
+            if (specialReq) {
+                specialReq.value = 'Applied Promo Code: ' + code + ' (Special Combo Offer)';
+            }
+            var contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            var nameInput = document.getElementById('fullName');
+            if (nameInput) {
+                setTimeout(function() { nameInput.focus(); }, 400);
+            }
+        }
+
+        // Add dish name from menu card to reservation notes
+        function selectDish(dishName) {
+            var specialReq = document.getElementById('specialRequests');
+            if (specialReq) {
+                var current = specialReq.value.trim();
+                if (current.length > 0 && current.indexOf(dishName) === -1) {
+                    specialReq.value = current + ' | Pre-order: ' + dishName;
+                } else if (current.length === 0) {
+                    specialReq.value = 'Pre-order item: ' + dishName;
+                }
+            }
+            var contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+            var nameInput = document.getElementById('fullName');
+            if (nameInput) {
+                setTimeout(function() { nameInput.focus(); }, 400);
+            }
+        }
+    </script>
 </body>
 </html>

@@ -497,6 +497,27 @@ img {
     margin-top: auto;
 }
 
+/* Interactive Dish Order Button */
+.btn-card-order {
+    margin-top: 12px;
+    width: 100%;
+    padding: 7px 10px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.btn-card-order:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
 /* 9. Specials & Offers */
 .specials {
     background-color: #ffffff;
@@ -849,6 +870,66 @@ img {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
+}
+
+/* Booking Confirmation Box (Prevents 405 error on static host) */
+.booking-confirmation {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.conf-icon {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.booking-confirmation h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.conf-intro {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 18px;
+}
+
+.conf-details-box {
+    background-color: #faf6f0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.conf-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed #ebd8ce;
+    font-size: 0.88rem;
+}
+
+.conf-row:last-child {
+    border-bottom: none;
+}
+
+.conf-row span {
+    color: var(--text-light);
+}
+
+.conf-row strong {
+    color: var(--text-dark);
+}
+
+.conf-footer-text {
+    font-size: 0.84rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 
 /* 13. Footer Section */
