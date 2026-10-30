@@ -27,7 +27,7 @@ The website strictly follows the course guidelines, using standard web technolog
 | # | Required Feature (From PDF Brief) | Implementation Details |
 |:---:|:---|:---|
 | **1** | **Header & Navigation Bar** | Semantic `<header>` and `<nav>` with brand logo, smooth navigation links to all page sections, and a "Book Table" button. |
-| **2** | **Hero Section** | Welcoming headline, narrative description, dual call-to-action buttons ("Explore Menu" & "Reserve Table"), quick café statistics, and a floating signature brew badge with `@keyframes` animation. |
+| **2** | **Hero Section** | Welcoming headline, narrative description, dual call-to-action buttons ("Explore Menu" & "Reserve Table"), quick café statistics, and a floating signature brew badge positioned using CSS `position: absolute`. |
 | **3** | **About Us Story** | Narrative explaining the café's heritage, sustainable estate sourcing, and 3 distinct highlight cards (Farm Fresh, Handmade Bakery, Cozy Space). |
 | **4** | **8 Food & Beverage Menu Items** | CSS Grid featuring 8 distinct items across Starters, Gourmet Mains, Bakery Desserts, and Specialty Coffee with prices, dietary tags (`🌱 Veg`), and badge positioning (`Bestseller`, `Chef's Special`). |
 | **5** | **Specials & Promotional Offers** | Featured Weekend Brunch combo banner (with promo code `URBANBRUNCH`) plus secondary promotional cards for Student Discounts and Happy Hours. |
