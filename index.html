@@ -3,126 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Café - Modern Coffeehouse & Kitchen</title>
+    <title>Urban Café - Coffeehouse & Kitchen</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Main Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header & Navigation -->
-    <header class="site-header">
-        <div class="header-container">
+    <!-- 1. Header & Navigation Bar -->
+    <header class="header">
+        <div class="nav-container">
             <div class="logo">
                 <a href="#home">
                     <h1>Urban Café</h1>
-                    <span class="logo-sub">Coffeehouse & Kitchen</span>
+                    <span class="tagline">Coffee & Kitchen</span>
                 </a>
             </div>
             <nav class="navbar">
                 <ul class="nav-links">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#menu" class="nav-link">Menu</a></li>
-                    <li><a href="#specials" class="nav-link">Specials</a></li>
-                    <li><a href="#hours" class="nav-link">Hours</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#hours">Hours</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-cta">
-                <a href="#contact" class="btn btn-header">Book Table</a>
+            <div class="nav-button">
+                <a href="#contact" class="btn btn-small">Book Table</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- 1. Hero Section -->
-        <section id="home" class="hero-section">
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero">
             <div class="hero-container">
-                <div class="hero-content">
-                    <span class="hero-badge">Welcome to Urban Café</span>
-                    <h2 class="hero-title">Where Every Cup Tells an Artisanal Story.</h2>
-                    <p class="hero-description">
-                        A cozy neighborhood sanctuary serving freshly roasted specialty coffee, handcrafted gourmet sandwiches, and oven-fresh bakery delights made with love every single day.
+                <div class="hero-text">
+                    <span class="badge-pill">Welcome to Urban Café</span>
+                    <h2>Good Food, Fresh Coffee & Great Moments.</h2>
+                    <p>
+                        A cozy neighborhood café serving freshly brewed specialty coffee, grilled sandwiches, hot pastas, and fresh baked desserts every single day.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                        <a href="#menu" class="btn btn-primary">View Our Menu</a>
                         <a href="#contact" class="btn btn-secondary">Reserve a Table</a>
                     </div>
                     <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Organic Arabica</span>
+                        <div class="stat-box">
+                            <h3>100%</h3>
+                            <p>Arabica Coffee</p>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">4.9 ★</span>
-                            <span class="stat-label">Customer Rating</span>
+                        <div class="stat-box">
+                            <h3>4.9 ★</h3>
+                            <p>Google Rating</p>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Daily</span>
-                            <span class="stat-label">Fresh Bakes</span>
+                        <div class="stat-box">
+                            <h3>Daily</h3>
+                            <p>Fresh Bakery</p>
                         </div>
                     </div>
                 </div>
-                <div class="hero-image-wrapper">
-                    <img src="images/hero-cafe.jpg" alt="Cozy interior of Urban Café" class="hero-img">
+                <div class="hero-image">
+                    <img src="images/hero-cafe.jpg" alt="Cozy seating area at Urban Cafe">
                     <div class="hero-floating-card">
                         <span class="card-icon">☕</span>
                         <div>
                             <h4>Signature Brews</h4>
-                            <p>Roasted to perfection</p>
+                            <p>Freshly roasted daily</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. About Us Section -->
-        <section id="about" class="about-section">
+        <!-- 3. About Section -->
+        <section id="about" class="about">
             <div class="section-container">
                 <div class="about-grid">
-                    <div class="about-image-col">
-                        <div class="image-frame">
-                            <img src="images/about-cafe.jpg" alt="Barista preparing specialty coffee" class="about-img">
-                            <div class="experience-badge">
-                                <span class="exp-years">Est.</span>
-                                <span class="exp-text">2024</span>
-                            </div>
+                    <div class="about-image">
+                        <img src="images/about-cafe.jpg" alt="Barista making coffee at Urban Cafe">
+                        <div class="about-badge">
+                            <span>Started</span>
+                            <strong>2024</strong>
                         </div>
                     </div>
-                    <div class="about-content-col">
-                        <span class="section-tag">Our Story & Philosophy</span>
-                        <h2 class="section-heading">Crafting Warm Memories, One Brew at a Time.</h2>
-                        <p class="about-text">
-                            Founded with a humble passion for exceptional coffee and heartfelt hospitality, Urban Café began as a dream to create a peaceful corner where students, creatives, and friends can pause, unwind, and connect.
+                    <div class="about-text">
+                        <span class="section-tag">About Our Café</span>
+                        <h2 class="section-title">Fresh Ingredients, Honest Recipes.</h2>
+                        <p>
+                            Urban Café was started with a simple idea: to make a comfortable place where students, friends, and families can enjoy delicious food and real coffee at reasonable prices.
                         </p>
-                        <p class="about-text">
-                            Every bean is carefully sourced from sustainable local estates, and every dish is prepared fresh in our kitchen using wholesome, seasonal ingredients. Whether you're here for a quick morning flat white or a lingering weekend brunch, you are always at home.
+                        <p>
+                            We source our coffee beans directly from south Indian coffee estates and bake our bread and brownies fresh every morning. Whether you need a peaceful spot to study or a fun place to catch up with friends, our doors are always open.
                         </p>
-                        
-                        <div class="about-features">
-                            <div class="feature-item">
-                                <div class="feature-icon">🌱</div>
+                        <div class="features-list">
+                            <div class="feature">
+                                <span class="feature-icon">🌱</span>
                                 <div>
-                                    <h4>Farm Fresh Ingredients</h4>
-                                    <p>Locally sourced organic produce delivered daily.</p>
+                                    <h4>Fresh Ingredients</h4>
+                                    <p>Vegetables and dairy sourced fresh from local markets.</p>
                                 </div>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">🍞</div>
+                            <div class="feature">
+                                <span class="feature-icon">🍞</span>
                                 <div>
-                                    <h4>Handmade Bakery</h4>
-                                    <p>Artisanal sourdough and pastries baked every morning.</p>
+                                    <h4>Daily Baked Items</h4>
+                                    <p>Cheesecakes, brownies, and bread baked in-house daily.</p>
                                 </div>
                             </div>
-                            <div class="feature-item">
-                                <div class="feature-icon">✨</div>
+                            <div class="feature">
+                                <span class="feature-icon">📶</span>
                                 <div>
-                                    <h4>Warm & Welcoming Space</h4>
-                                    <p>High-speed Wi-Fi, ambient music, and pet-friendly seating.</p>
+                                    <h4>Student Friendly</h4>
+                                    <p>Fast free Wi-Fi, power charging points, and quiet music.</p>
                                 </div>
                             </div>
                         </div>
@@ -131,268 +128,260 @@
             </div>
         </section>
 
-        <!-- 3. Menu Section -->
-        <section id="menu" class="menu-section">
+        <!-- 4. Menu Section (8 Food Items with Cards) -->
+        <section id="menu" class="menu">
             <div class="section-container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Handcrafted Offerings</span>
-                    <h2 class="section-heading">Our Special Menu</h2>
-                    <p class="section-subheading">
-                        Made fresh on order with high-quality ingredients, fair-trade coffee beans, and artisanal recipes.
+                <div class="section-heading text-center">
+                    <span class="section-tag">Explore Our Food</span>
+                    <h2 class="section-title">Our Special Menu</h2>
+                    <p class="section-desc">
+                        Handcrafted food and drinks prepared fresh upon every order.
                     </p>
                 </div>
 
-                <!-- Menu Cards Grid (8 Items) -->
                 <div class="menu-grid">
-
                     <!-- Item 1: Starters -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/wedges.jpg" alt="Herb Potato Wedges" class="menu-img">
-                            <span class="card-badge badge-popular">Bestseller</span>
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/wedges.jpg" alt="Herb Potato Wedges">
+                            <span class="badge badge-popular">Bestseller</span>
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Herb Potato Wedges</h3>
-                                <span class="item-price">₹149</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Herb Potato Wedges</h3>
+                                <span class="price">₹149</span>
                             </div>
-                            <span class="item-category">Starters & Sides</span>
-                            <p class="item-desc">
-                                Crispy hand-cut potato wedges tossed in rosemary, smoked paprika, and sea salt, served with house garlic aioli.
+                            <span class="category-name">Starters & Sides</span>
+                            <p class="description">
+                                Crispy fried potato wedges seasoned with garlic, rosemary, and salt, served with herb mayo dip.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 2: Starters -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/toast.jpg" alt="Chilli Cheese Toast" class="menu-img">
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/toast.jpg" alt="Chilli Cheese Toast">
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Chilli Cheese Toast</h3>
-                                <span class="item-price">₹169</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Chilli Cheese Toast</h3>
+                                <span class="price">₹169</span>
                             </div>
-                            <span class="item-category">Starters & Sides</span>
-                            <p class="item-desc">
-                                Toasted artisanal sourdough layered with sharp cheddar, melted mozzarella, roasted peppers, and spicy green chillies.
+                            <span class="category-name">Starters & Sides</span>
+                            <p class="description">
+                                Crispy toasted bread topped with melted cheddar cheese, green chillies, and oregano herbs.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 3: Mains -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/sandwich.jpg" alt="Pesto Paneer Grilled Sandwich" class="menu-img">
-                            <span class="card-badge badge-chef">Chef's Special</span>
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/sandwich.jpg" alt="Pesto Paneer Grilled Sandwich">
+                            <span class="badge badge-special">Chef's Pick</span>
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Pesto Paneer Sandwich</h3>
-                                <span class="item-price">₹249</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Pesto Paneer Sandwich</h3>
+                                <span class="price">₹249</span>
                             </div>
-                            <span class="item-category">Gourmet Mains</span>
-                            <p class="item-desc">
-                                Marinated cottage cheese slices, sweet basil pesto, vine-ripened tomatoes, and mozzarella grilled on multi-grain bread.
+                            <span class="category-name">Gourmet Mains</span>
+                            <p class="description">
+                                Grilled sandwich layered with spiced paneer, fresh basil pesto sauce, tomatoes, and mozzarella cheese.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 4: Mains -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/pasta.jpg" alt="Creamy Mushroom Alfredo Pasta" class="menu-img">
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/pasta.jpg" alt="Creamy Mushroom Alfredo Pasta">
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Creamy Mushroom Alfredo</h3>
-                                <span class="item-price">₹279</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Creamy Mushroom Alfredo</h3>
+                                <span class="price">₹279</span>
                             </div>
-                            <span class="item-category">Gourmet Mains</span>
-                            <p class="item-desc">
-                                Tender penne pasta gently simmered in a velvety garlic parmesan cream reduction with sautéed button mushrooms.
+                            <span class="category-name">Gourmet Mains</span>
+                            <p class="description">
+                                Penne pasta cooked in a rich white cheese sauce with sautéed mushrooms, garlic, and herbs.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 5: Desserts -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/cheesecake.jpg" alt="Classic Baked Cheesecake" class="menu-img">
-                            <span class="card-badge badge-popular">Bestseller</span>
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/cheesecake.jpg" alt="Classic Baked Cheesecake">
+                            <span class="badge badge-popular">Bestseller</span>
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Classic Baked Cheesecake</h3>
-                                <span class="item-price">₹199</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Baked New York Cheesecake</h3>
+                                <span class="price">₹199</span>
                             </div>
-                            <span class="item-category">Artisanal Bakery</span>
-                            <p class="item-desc">
-                                Silky New York style baked cheesecake resting on a buttery biscuit crumb, drizzled with seasonal berry glaze.
+                            <span class="category-name">Bakery & Desserts</span>
+                            <p class="description">
+                                Smooth baked cheesecake with a crunchy biscuit base, topped with sweet strawberry fruit sauce.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 6: Desserts -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/brownie.jpg" alt="Chocolate Fudge Brownie" class="menu-img">
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/brownie.jpg" alt="Chocolate Fudge Brownie with Ice Cream">
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Fudge Brownie with Ice Cream</h3>
-                                <span class="item-price">₹159</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Hot Brownie with Ice Cream</h3>
+                                <span class="price">₹159</span>
                             </div>
-                            <span class="item-category">Artisanal Bakery</span>
-                            <p class="item-desc">
-                                Warm Belgian dark chocolate brownie loaded with roasted walnuts, served with a scoop of chilled vanilla bean gelato.
+                            <span class="category-name">Bakery & Desserts</span>
+                            <p class="description">
+                                Warm chocolate walnut brownie served with a scoop of vanilla ice cream and warm chocolate sauce.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 7: Beverages -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/latte.jpg" alt="Iced Spanish Latte" class="menu-img">
-                            <span class="card-badge badge-chef">Signature</span>
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/latte.jpg" alt="Iced Spanish Latte">
+                            <span class="badge badge-special">Signature</span>
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Iced Spanish Latte</h3>
-                                <span class="item-price">₹179</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Iced Spanish Latte</h3>
+                                <span class="price">₹179</span>
                             </div>
-                            <span class="item-category">Specialty Coffee</span>
-                            <p class="item-desc">
-                                Fresh double espresso poured over cold whole milk and sweet condensed cream, served over crystal clear ice.
+                            <span class="category-name">Specialty Coffee</span>
+                            <p class="description">
+                                Chilled milk mixed with sweet condensed milk, topped with a fresh double espresso shot and ice.
                             </p>
                         </div>
                     </article>
 
                     <!-- Item 8: Beverages -->
                     <article class="menu-card">
-                        <div class="card-media">
-                            <img src="images/lemonade.jpg" alt="Fresh Mint Lemonade" class="menu-img">
-                            <span class="card-diet diet-veg" title="Vegetarian">🌱 Veg</span>
+                        <div class="card-image-box">
+                            <img src="images/lemonade.jpg" alt="Fresh Mint Lemonade">
+                            <span class="badge-veg">🌱 Veg</span>
                         </div>
-                        <div class="card-body">
-                            <div class="card-title-row">
-                                <h3 class="item-name">Fresh Mint Lemonade</h3>
-                                <span class="item-price">₹129</span>
+                        <div class="card-content">
+                            <div class="card-top">
+                                <h3>Fresh Mint Lemonade</h3>
+                                <span class="price">₹129</span>
                             </div>
-                            <span class="item-category">Coolers & Drinks</span>
-                            <p class="item-desc">
-                                Chilled sparkling cooler made with freshly squeezed lemon juice, muddled garden mint, rock salt, and raw cane sugar.
+                            <span class="category-name">Cold Drinks</span>
+                            <p class="description">
+                                Refreshing drink made with fresh lemon juice, crushed green mint leaves, sugar, and sparkling soda.
                             </p>
                         </div>
                     </article>
-
                 </div>
             </div>
         </section>
 
-        <!-- 4. Specials & Offers Section -->
-        <section id="specials" class="specials-section">
+        <!-- 5. Specials & Offers Section -->
+        <section id="specials" class="specials">
             <div class="section-container">
                 <div class="special-banner">
-                    <div class="special-banner-content">
-                        <span class="banner-tag">Limited Time Offer</span>
-                        <h2 class="banner-title">Weekend Artisan Brunch Feast</h2>
-                        <p class="banner-desc">
-                            Enjoy any signature gourmet sandwich, a freshly brewed specialty coffee, and our famous chocolate fudge brownie at a special bundled price of just ₹399!
+                    <div class="banner-content">
+                        <span class="banner-tag">Weekly Special Offer</span>
+                        <h2>Weekend Brunch Feast Combo</h2>
+                        <p>
+                            Get any sandwich, one coffee of your choice, and a hot chocolate brownie for a special combo price of only ₹399!
                         </p>
-                        <div class="promo-box">
-                            <span class="promo-label">Use Coupon Code:</span>
-                            <span class="promo-code">URBANBRUNCH</span>
+                        <div class="coupon-box">
+                            <span>Use Promo Code:</span>
+                            <strong>URBANBRUNCH</strong>
                         </div>
-                        <a href="#contact" class="btn btn-primary">Claim Your Table</a>
+                        <a href="#contact" class="btn btn-primary">Book Table Now</a>
                     </div>
-                    <div class="special-banner-image">
-                        <img src="images/special-brunch.jpg" alt="Weekend Brunch Combo Spread" class="special-img">
+                    <div class="banner-image">
+                        <img src="images/special-brunch.jpg" alt="Weekend Brunch Food Combo">
                     </div>
                 </div>
 
-                <!-- Secondary Offer Cards -->
+                <!-- Secondary Offers -->
                 <div class="offers-grid">
-                    <div class="offer-card">
-                        <div class="offer-icon">☕</div>
-                        <div class="offer-info">
-                            <h3>Daily Happy Hours</h3>
-                            <p>Buy any hot or iced brew between 4:00 PM and 7:00 PM, get 50% off on your second drink!</p>
-                            <span class="offer-time">Mon – Thu | 4:00 PM – 7:00 PM</span>
+                    <div class="offer-box">
+                        <span class="offer-icon">☕</span>
+                        <div>
+                            <h4>Happy Hours Discount</h4>
+                            <p>Order any coffee between 4:00 PM and 7:00 PM on weekdays and get 50% off on your second cup!</p>
+                            <span class="offer-sub">Monday to Thursday</span>
                         </div>
                     </div>
-                    <div class="offer-card">
-                        <div class="offer-icon">🎓</div>
-                        <div class="offer-info">
-                            <h3>Student Perk</h3>
-                            <p>Flash your valid college ID card at the counter and enjoy a flat 10% discount on entire food bill.</p>
-                            <span class="offer-time">All Days | Dine-in Only</span>
+                    <div class="offer-box">
+                        <span class="offer-icon">🎓</span>
+                        <div>
+                            <h4>Student Discount</h4>
+                            <p>Show your college ID card at the payment counter and get a flat 10% discount on your entire bill.</p>
+                            <span class="offer-sub">Valid All 7 Days</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Customer Testimonials Section -->
-        <section class="testimonials-section">
+        <!-- 6. Customer Testimonials Section -->
+        <section class="testimonials">
             <div class="section-container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Word of Mouth</span>
-                    <h2 class="section-heading">Loved by Our Guests</h2>
-                    <p class="section-subheading">
-                        Here is what regular visitors and food enthusiasts have to say about their Urban Café experience.
-                    </p>
+                <div class="section-heading text-center">
+                    <span class="section-tag">Reviews</span>
+                    <h2 class="section-title">What Our Customers Say</h2>
+                    <p class="section-desc">Honest reviews from regular guests and college students.</p>
                 </div>
 
                 <div class="testimonials-grid">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-card">
-                        <div class="star-rating">★★★★★</div>
-                        <p class="testimonial-text">
-                            "The iced Spanish latte and the pesto paneer sandwich are hands down the best in the city. The calm music and sunlight through the glass make it my favorite study corner!"
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "The iced Spanish latte and paneer sandwich are really good! It is my favorite place to sit with my laptop and study on weekends."
                         </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">AS</div>
+                        <div class="user-info">
+                            <div class="user-avatar">AS</div>
                             <div>
-                                <h4 class="author-name">Ananya Sharma</h4>
-                                <span class="author-role">Regular Patron</span>
+                                <h4>Ananya Sharma</h4>
+                                <span>Engineering Student</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card">
-                        <div class="star-rating">★★★★★</div>
-                        <p class="testimonial-text">
-                            "Genuinely great coffee roasted to perfection without that bitter aftertaste. The baked cheesecake is silky smooth and rich. Highly recommended for weekend brunch!"
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "Great coffee and very affordable prices. The hot brownie with ice cream is amazing. The staff is polite and helpful."
                         </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">RV</div>
+                        <div class="user-info">
+                            <div class="user-avatar">RV</div>
                             <div>
-                                <h4 class="author-name">Rohan Verma</h4>
-                                <span class="author-role">Coffee Enthusiast</span>
+                                <h4>Rohan Verma</h4>
+                                <span>Regular Customer</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-card">
-                        <div class="star-rating">★★★★★</div>
-                        <p class="testimonial-text">
-                            "The ambiance is warm, welcoming, and pet-friendly. Their herb potato wedges and hot chocolate are unmatched comforts after a long college day."
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">
+                            "Really nice and cozy atmosphere. Free Wi-Fi works fast, and the potato wedges are crunchy and fresh. 10/10 recommended!"
                         </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">PK</div>
+                        <div class="user-info">
+                            <div class="user-avatar">PK</div>
                             <div>
-                                <h4 class="author-name">Priya Kulkarni</h4>
-                                <span class="author-role">Architecture Student</span>
+                                <h4>Priya Kulkarni</h4>
+                                <span>College Student</span>
                             </div>
                         </div>
                     </div>
@@ -400,25 +389,23 @@
             </div>
         </section>
 
-        <!-- 6. Opening Hours Table Section (Lecture 4 HTML Table) -->
-        <section id="hours" class="hours-section">
+        <!-- 7. Opening Hours Table (Semantic HTML Table - Lecture 4) -->
+        <section id="hours" class="hours">
             <div class="section-container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Plan Your Visit</span>
-                    <h2 class="section-heading">Opening Hours & Schedule</h2>
-                    <p class="section-subheading">
-                        Drop in for an early morning espresso, a relaxed midday lunch, or late-night dessert.
-                    </p>
+                <div class="section-heading text-center">
+                    <span class="section-tag">Timings</span>
+                    <h2 class="section-title">Opening Hours</h2>
+                    <p class="section-desc">We are open 7 days a week to serve you fresh food and drinks.</p>
                 </div>
 
-                <div class="table-wrapper">
+                <div class="table-container">
                     <table class="hours-table">
                         <thead>
                             <tr>
-                                <th>Day of the Week</th>
-                                <th>Morning Session</th>
-                                <th>Evening Session</th>
-                                <th>Service Type</th>
+                                <th>Day</th>
+                                <th>Morning Timings</th>
+                                <th>Evening Timings</th>
+                                <th>Services Available</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -426,24 +413,24 @@
                                 <td><strong>Monday – Thursday</strong></td>
                                 <td>8:00 AM – 1:00 PM</td>
                                 <td>4:00 PM – 10:30 PM</td>
-                                <td><span class="status-badge status-open">Dine-in & Takeaway</span></td>
+                                <td><span class="status status-open">Dine-in & Takeaway</span></td>
                             </tr>
                             <tr>
                                 <td><strong>Friday</strong></td>
                                 <td>8:00 AM – 1:00 PM</td>
                                 <td>4:00 PM – 11:00 PM</td>
-                                <td><span class="status-badge status-open">Dine-in & Takeaway</span></td>
+                                <td><span class="status status-open">Dine-in & Takeaway</span></td>
                             </tr>
                             <tr>
                                 <td><strong>Saturday</strong></td>
                                 <td>8:30 AM – 2:00 PM</td>
                                 <td>3:30 PM – 11:30 PM</td>
-                                <td><span class="status-badge status-special">Brunch & Live Acoustic</span></td>
+                                <td><span class="status status-special">Brunch & Music</span></td>
                             </tr>
                             <tr>
                                 <td><strong>Sunday</strong></td>
-                                <td colspan="2">8:30 AM – 11:00 PM (Continuous All-Day Service)</td>
-                                <td><span class="status-badge status-special">Weekend Chef Special</span></td>
+                                <td colspan="2">8:30 AM – 11:00 PM (All Day Open)</td>
+                                <td><span class="status status-special">Chef's Weekend Special</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -451,116 +438,111 @@
             </div>
         </section>
 
-        <!-- 7. Reservation & Contact Section (Lecture 3 HTML Forms) -->
-        <section id="contact" class="contact-section">
+        <!-- 8. Contact & Reservation Form (Semantic HTML Form - Lecture 3) -->
+        <section id="contact" class="contact">
             <div class="section-container">
                 <div class="contact-grid">
                     
-                    <!-- Left Column: Contact Information -->
-                    <div class="contact-info-card">
-                        <span class="section-tag">Get in Touch</span>
-                        <h2 class="section-heading">Visit Us or Reserve a Corner.</h2>
+                    <!-- Left Column: Contact Details -->
+                    <div class="contact-info">
+                        <span class="section-tag">Reach Us</span>
+                        <h2 class="section-title">Find Us or Book a Table.</h2>
                         <p class="contact-intro">
-                            Whether you're organizing a small study group, catching up with an old friend, or looking for a calm workstation, we would love to host you.
+                            Have questions or want to reserve a table for a birthday or group study? Contact us or drop by!
                         </p>
 
-                        <div class="info-blocks">
-                            <div class="info-block">
-                                <div class="info-icon">📍</div>
+                        <div class="info-items">
+                            <div class="info-row">
+                                <span class="icon">📍</span>
                                 <div>
-                                    <h4>Our Location</h4>
+                                    <h4>Café Address</h4>
                                     <p>Plot 42, North Main Road, Koregaon Park, Pune, Maharashtra 411001</p>
                                 </div>
                             </div>
-
-                            <div class="info-block">
-                                <div class="info-icon">📞</div>
+                            <div class="info-row">
+                                <span class="icon">📞</span>
                                 <div>
-                                    <h4>Call / WhatsApp</h4>
+                                    <h4>Phone Number</h4>
                                     <p><a href="tel:+919876543210">+91 98765 43210</a></p>
                                 </div>
                             </div>
-
-                            <div class="info-block">
-                                <div class="info-icon">✉️</div>
+                            <div class="info-row">
+                                <span class="icon">✉️</span>
                                 <div>
-                                    <h4>Email Inquiries</h4>
+                                    <h4>Email Address</h4>
                                     <p><a href="mailto:hello@urbancafe.in">hello@urbancafe.in</a></p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Amenities List -->
-                        <div class="amenities-box">
-                            <h4>Café Amenities</h4>
-                            <ul class="amenities-list">
-                                <li>✓ High-Speed Optical Wi-Fi</li>
-                                <li>✓ Laptop Charging Sockets at Every Table</li>
-                                <li>✓ Outdoor Garden Pet Seating</li>
-                                <li>✓ Valet Parking Available</li>
+                        <div class="amenities-card">
+                            <h4>Café Features</h4>
+                            <ul>
+                                <li>✓ Fast Free Wi-Fi</li>
+                                <li>✓ Charging Points at Tables</li>
+                                <li>✓ Outdoor Seating Area</li>
+                                <li>✓ Two-Wheeler & Car Parking</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Right Column: Table Reservation Form -->
-                    <div class="reservation-card">
-                        <div class="form-header">
-                            <h3>Reserve Your Table</h3>
-                            <p>Fill out the details below and we will confirm your spot via SMS/Email within 15 minutes.</p>
-                        </div>
+                    <div class="form-card">
+                        <h3>Book a Table</h3>
+                        <p>Fill this simple form to reserve your table. We will confirm shortly.</p>
 
-                        <form class="reservation-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you! Your table reservation request has been received.');">
+                        <form class="booking-form" action="#" method="post">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="fullName">Full Name <span class="required">*</span></label>
+                                    <label for="fullName">Your Name *</label>
                                     <input type="text" id="fullName" name="fullName" placeholder="e.g. Harshit Raj" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <label for="phone">Phone Number *</label>
                                     <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="email">Email Address <span class="required">*</span></label>
-                                    <input type="email" id="email" name="email" placeholder="e.g. harshit@example.com" required>
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. harshit@gmail.com" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="guests">Party Size <span class="required">*</span></label>
+                                    <label for="guests">Number of Guests *</label>
                                     <select id="guests" name="guests" required>
                                         <option value="" disabled selected>Select Guests</option>
-                                        <option value="1">1 Person (Solo Workstation)</option>
-                                        <option value="2">2 Persons (Duo Table)</option>
-                                        <option value="3-4">3 – 4 Persons (Small Booth)</option>
-                                        <option value="5+">5+ Persons (Large Family/Group Table)</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 Persons</option>
+                                        <option value="3-4">3 – 4 Persons</option>
+                                        <option value="5+">5+ Persons</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="resDate">Preferred Date <span class="required">*</span></label>
+                                    <label for="resDate">Date *</label>
                                     <input type="date" id="resDate" name="resDate" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="resTime">Preferred Time <span class="required">*</span></label>
+                                    <label for="resTime">Time Slot *</label>
                                     <select id="resTime" name="resTime" required>
-                                        <option value="" disabled selected>Select Time Slot</option>
+                                        <option value="" disabled selected>Select Time</option>
                                         <option value="morning">Morning (9:00 AM – 12:00 PM)</option>
                                         <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
                                         <option value="evening">Evening (4:00 PM – 8:00 PM)</option>
-                                        <option value="night">Night (8:00 PM – 11:00 PM)</option>
+                                        <option value="night">Night (8:00 PM – 10:30 PM)</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="specialRequests">Special Requests / Seating Preference</label>
-                                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="e.g. Corner table near power outlet, quiet spot for studying, high chair needed..."></textarea>
+                                <label for="specialRequests">Special Request (Optional)</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="e.g. Need table near charging point, corner table..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                            <button type="submit" class="btn btn-primary btn-full">Submit Reservation</button>
                         </form>
                     </div>
 
@@ -569,49 +551,44 @@
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer class="site-footer">
+    <!-- 9. Footer Section -->
+    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-col brand-col">
-                <div class="footer-logo">
-                    <h2>Urban Café</h2>
-                    <span>Artisanal Coffee & Kitchen</span>
-                </div>
-                <p class="footer-about">
-                    Dedicated to honest ingredients, slow-roasted specialty brews, and creating warm, comforting memories in the heart of Pune.
+            <div class="footer-column brand-info">
+                <h3>Urban Café</h3>
+                <p class="footer-tag">Coffeehouse & Kitchen</p>
+                <p>
+                    Serving fresh coffee, tasty snacks, and peaceful moments in Koregaon Park, Pune.
                 </p>
             </div>
 
-            <div class="footer-col links-col">
-                <h4>Quick Navigation</h4>
-                <ul class="footer-links">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-nav">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Our Story</a></li>
-                    <li><a href="#menu">Menu & Pricing</a></li>
-                    <li><a href="#specials">Weekend Specials</a></li>
-                    <li><a href="#hours">Hours & Timing</a></li>
-                    <li><a href="#contact">Table Reservations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#hours">Timings</a></li>
+                    <li><a href="#contact">Book Table</a></li>
                 </ul>
             </div>
 
-            <div class="footer-col timing-col">
-                <h4>Visit Today</h4>
-                <p><strong>Open Daily:</strong></p>
+            <div class="footer-column">
+                <h4>Timings</h4>
                 <p>Mon – Fri: 8:00 AM – 10:30 PM</p>
                 <p>Sat – Sun: 8:30 AM – 11:30 PM</p>
-                <div class="footer-socials">
-                    <span class="social-tag">Instagram: @urbancafepune</span>
-                </div>
+                <p class="social-text">Instagram: @urbancafepune</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <div class="footer-bottom-container">
+            <div class="footer-bottom-content">
                 <p>&copy; 2026 Urban Café. All rights reserved.</p>
-                <p class="student-credit">
-                    Web Development Continuous Assessment (CA) Project · Built with HTML5 & CSS3 by <strong>Harshit Raj</strong> (B.Tech CSE - 1st Year)
+                <p class="author-tag">
+                    Web Development CA Project · Made by <strong>Harshit Raj</strong> (B.Tech CSE - 1st Year)
                 </p>
-                <a href="#home" class="back-to-top" title="Scroll to Top">↑ Top</a>
+                <a href="#home" class="top-link">Back to Top ↑</a>
             </div>
         </div>
     </footer>
