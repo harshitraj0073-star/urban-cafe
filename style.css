@@ -566,4 +566,278 @@ img {
     margin-top: auto;
 }
 
+/* 9. Specials & Offers Section */
+.specials-section {
+    background-color: #ffffff;
+}
+
+.special-banner {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f7efe6 0%, #faede1 100%);
+    border-radius: 18px;
+    border: 1px solid #ebd9c8;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 36px;
+}
+
+.special-banner-content {
+    flex: 1.1;
+    padding: 48px;
+}
+
+.banner-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.banner-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.banner-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.promo-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    background-color: #ffffff;
+    border: 2px dashed var(--accent-color);
+    border-radius: 8px;
+    margin-bottom: 28px;
+}
+
+.promo-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.promo-code {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 1.5px;
+    font-family: monospace;
+}
+
+.special-banner-image {
+    flex: 0.9;
+    height: 380px;
+}
+
+.special-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offers-grid {
+    display: flex;
+    gap: 24px;
+}
+
+.offer-card {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    background-color: var(--bg-page);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.offer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-soft);
+    border-color: #d8cebf;
+}
+
+.offer-icon {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.offer-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.offer-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.offer-time {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--primary-color);
+}
+
+/* 10. Customer Testimonials Section */
+.testimonials-section {
+    background-color: var(--bg-page);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.testimonial-card {
+    background-color: var(--bg-card);
+    padding: 32px 26px;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.star-rating {
+    color: #e5a93b;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text-main);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+}
+
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ecdac6;
+}
+
+.author-name {
+    font-size: 0.98rem;
+    margin-bottom: 2px;
+}
+
+.author-role {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* 11. Opening Hours Table (HTML Table - Lecture 4) */
+.hours-section {
+    background-color: #ffffff;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.hours-table thead tr {
+    background-color: var(--primary-light);
+}
+
+.hours-table th {
+    padding: 16px 20px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--primary-dark);
+    border-bottom: 2px solid #e2d1be;
+}
+
+.hours-table td {
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+.hours-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.hours-table tbody tr:hover {
+    background-color: #faf7f2;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.status-open {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.status-special {
+    background-color: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ffe0b2;
+}
+
+
 
