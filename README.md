@@ -22,6 +22,14 @@ The website strictly follows the course guidelines, using standard web technolog
 
 ---
 
+## 📸 Screenshots (Desktop & Mobile)
+
+| Desktop View (1280px) | Mobile Responsive View (390px) |
+|:---:|:---:|
+| ![Desktop View](screenshots/desktop-preview.png) | ![Mobile View](screenshots/mobile-preview.png) |
+
+---
+
 ## 📋 Course Rubric & Implemented Features
 
 | # | Required Feature (From PDF Brief) | Implementation Details |
