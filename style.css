@@ -1,0 +1,174 @@
+/* ===================================================
+   Urban Café - Modern Coffeehouse & Kitchen
+   Web Development CA Project 1
+   Author: Harshit Raj (B.Tech CSE - 1st Year)
+   =================================================== */
+
+/* 1. CSS Variables / Design Tokens */
+:root {
+    --primary-color: #8b5a2b;       /* Warm coffee brown */
+    --primary-dark: #653c15;        /* Deep roast brown */
+    --primary-light: #f5ebe0;       /* Cream froth */
+    --accent-color: #d97736;        /* Warm terracotta orange */
+    --accent-green: #407952;        /* Fresh herb green */
+    --bg-page: #faf8f5;             /* Off-white warm canvas */
+    --bg-card: #ffffff;             /* Crisp card surface */
+    --text-main: #2b2623;           /* Dark espresso text */
+    --text-muted: #6b635b;          /* Soft body copy */
+    --border-color: #ebe3d9;        /* Subtle card border */
+    --shadow-soft: 0 4px 15px rgba(43, 38, 35, 0.06);
+    --shadow-hover: 0 10px 25px rgba(43, 38, 35, 0.12);
+    --transition: all 0.3s ease;
+}
+
+/* 2. Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-page);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 3. Reusable Components & Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(139, 90, 43, 0.25);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+}
+
+.btn-header:hover {
+    background-color: var(--primary-dark);
+}
+
+/* 4. Site Header & Navigation */
+.site-header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+.logo-sub {
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-main);
+    padding: 6px 0;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
