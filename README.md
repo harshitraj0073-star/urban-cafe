@@ -16,9 +16,9 @@ The website strictly follows the course guidelines, using standard web technolog
 
 ---
 
-## 🚀 Live Demo & Links
-- **Live Website (GitHub Pages):** [https://harshitraj0073-star.github.io/urban-cafe/](https://harshitraj0073-star.github.io/urban-cafe/)
+## 🚀 Live Demo & Deployment Links
 - **Live Website (Vercel):** [https://urban-cafe-harshit-raj.vercel.app](https://urban-cafe-harshit-raj.vercel.app)
+- **Live Website (GitHub Pages):** [https://harshitraj0073-star.github.io/urban-cafe/](https://harshitraj0073-star.github.io/urban-cafe/)
 - **GitHub Repository:** [https://github.com/harshitraj0073-star/urban-cafe](https://github.com/harshitraj0073-star/urban-cafe)
 - **Vercel Project Dashboard:** [https://vercel.com/harshit-raj/urban-cafe](https://vercel.com/harshit-raj/urban-cafe)
 
